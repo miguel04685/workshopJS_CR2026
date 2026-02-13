@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 11 de JavaScript</title>
+</head>
+<body>
+    <h1>Descubra a raíz quadrada de um número qualquer</h1>
+    <button onclick="tirarRaizQuadrada()">Clique em mim!</button>
+    <script> // Código inicial do JavaScript
+        function tirarRaizQuadrada() { // Função para tirar a raíz quadrada de um número
+            var numero = Number.parseFloat(window.prompt("Digite um número:")); // Pede pro usuário digitar um número
+            var raiz = Math.sqrt(numero); // Calcula a raíz quadrada do número
+            window.alert("A raíz quadrada de " + numero + " é " + raiz); // Informa a raíz quadrada do número
+        }
+    </script>
+</body>
+</html>
