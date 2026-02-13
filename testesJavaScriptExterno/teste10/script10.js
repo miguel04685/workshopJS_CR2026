@@ -1,0 +1,12 @@
+function verificarAprovacao() { // Função para verificar se o usuário passou no trimestre
+            var nome = window.prompt("Digite o seu nome:"); // Pede pro usuário digitar o nome
+            var nota1 = Number.parseFloat(window.prompt("Digite a sua primeira nota:")); // Pede pro usuário digitar a primeira nota
+            var nota2 = Number.parseFloat(window.prompt("Digite a sua segunda nota:")); // Pede pro usuário digitar a segunda nota
+            var nota3 = Number.parseFloat(window.prompt("Digite a sua terceira nota:")); // Pede pro usuário digitar a terceira nota
+            var media = (nota1 + nota2 + nota3) / 3; // Calcula a média das notas
+            if (media >= 7) { // Se a média for maior ou igual a 7
+                window.alert(nome + ", sua média é " + media + ". Você passou neste trimestre!"); // Informa que o usuário passou
+            } else { // Se a média for menor que 7
+                window.alert(nome + ", sua média é " + media + ". Você não passou neste trimestre!"); // Informa que o usuário não passou
+            }
+        }

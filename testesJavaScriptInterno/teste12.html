@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 12 de JavaScript Interno</title>
+</head>
+<body>
+    <h1>Elevando um número qualquer ao cubo</h1>
+    <button onclick="elevandoAoCubo()">Clique em mim!</button>
+    <script> // Código inicial do JavaScript
+        function elevandoAoCubo() { // Função para elevar um número ao cubo
+            var numero = Number.parseFloat(window.prompt("Digite um número:")); // Pede pro usuário digitar um número
+            var cubo = Math.pow(numero, 3); // Calcula o cubo do número
+            window.alert(numero + " ao cubo é igual a " + cubo); // Informa o cubo do número
+        }
+    </script>
+</body>
+</html>

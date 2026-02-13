@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 13 de JavaScript Interno</title>
+</head>
+<body>
+    <h1>Somando dois números qualqueres</h1>
+    <button onclick="somarDoisNumeros()">Clique em mim!</button>
+    <script> // Código inicial do JavaScript
+        function somarDoisNumeros() { // Função para somar dois números
+            var numero1 = Number.parseFloat(window.prompt("Digite o primeiro número:")); // Pede pro usuário digitar o primeiro número
+            var numero2 = Number.parseFloat(window.prompt("Digite o segundo número:")); // Pede pro usuário digitar o segundo número
+            var soma = numero1 + numero2; // Calcula a soma dos números
+            window.alert("A soma de " + numero1 + " e " + numero2 + " é igual a " + soma); // Informa a soma dos números
+        }
+    </script>
+</body>
+</html>
