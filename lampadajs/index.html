@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste da Lâmpada JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tahoma', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Clique na lâmpada para ligá-la!</h1> 
+    <img src="lampadaDesligada.png" width="400" height="400" id="lampada" onclick="ligarLampada()"> 
+    <!-- Imagem da lâmpada com id "lampada", inicialmente desligada, que pode ser clicada para ligar e desligar -->
+    </div>
+    <script> // Código JavaScript interno para o funcionamento da lâmpada
+    function ligarLampada() { // Função de ligar a lâmpada
+    document.getElementById("lampada").src = "lampadaLigada.png" // Define o src da imagem da lâmpada com id "lampada" como "lampadaligada.png"
+    document.body.style.backgroundColor = "white" // Altera a cor de fundo do corpo da página para branco
+    document.body.style.color = "black" // Altera a cor do texto do corpo da página para preto
+    document.getElementById("lampada").onclick = desligarLampada
+    document.getElementById("h1").innerHTML = "Clique na lâmpada para desligá-la!" // Define o conteúdo HTML do elemento h1 como "Clique na lâmpada para desligá-la!"
+
+    }
+    function desligarLampada() { // Função de desligar a lâmpada
+    document.getElementById("lampada").src = "lampadaDesligada.png" // Define o src da imagem da lâmpada com id "lampada" como "lampadadesligada.png"
+    document.body.style.backgroundColor = "black" // Altera a cor de fundo do corpo da página para preto
+    document.body.style.color = "white" // Altera a cor do texto do corpo da página para branco
+    document.getElementById("lampada").onclick = ligarLampada
+    document.getElementById("h1").innerHTML = "Clique na lâmpada para ligá-la!" // Define o conteúdo HTML do elemento h1 como "Clique na lâmpada para ligá-la!"
+    }
+    </script> 
+
+</body>
+</html>
