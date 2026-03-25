@@ -3,9 +3,10 @@ Apresentando o poder do JavaScript para os alunos do 1º ano do Ensino Médio do
 
 Nossos integrantes:
 - Bernardo Lins
-- Flávio Andrade
 - Henrique Augusto
+- Guilherme Palmeira
 - Kauã Lopes
 - Miguel Peçanha
 - Rafael Cavalcanti
 - Renan Fernandes
+- Renan Medeiros
